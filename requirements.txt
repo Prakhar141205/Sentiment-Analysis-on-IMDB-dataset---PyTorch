@@ -1,0 +1,7 @@
+torch
+torchtext
+pandas
+matplotlib
+wordcloud
+tqdm
+tensorboard

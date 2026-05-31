@@ -1,0 +1,27 @@
+## model configuration
+
+model_config:
+  embedding_dim: 300  ## no of dimensions of embeddings
+  hidden_dim: 300     ## no of dimensions for hidden state
+  output_dim: 2       ## no of output dimension
+  n_layers: 2         ## no of recurrent layers
+  bidirectional: True  ## use bidirectional RNN
+  dopout: 0.1          ## dropout rate
+
+
+## Data configuration
+
+data_config:
+  test_size: 0.25  ## size of the test dataset
+  max_length: 256   ## max length of each review
+  min_freq: 5   ## minimum freq of word to include
+
+## Training Configuration
+
+batch_size: 512  ## batch size for training
+lr = 0.0001     ## learning rate
+num_epochs: 7    ## no of epochs
+initialize_weights: True  ## flag for the weight initialization
+
+
+model: RNN
