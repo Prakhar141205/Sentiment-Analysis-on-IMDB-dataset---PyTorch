@@ -13,7 +13,7 @@ class GRU(nn.Module):
             dropout_rate,
             pad_index
         ):
-        super(self, RNN).__init__()
+        super(self, GRU).__init__()
 
         self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx = pad_index)
         self.gru = nn.GRU(

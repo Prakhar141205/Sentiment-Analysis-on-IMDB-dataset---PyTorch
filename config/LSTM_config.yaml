@@ -6,7 +6,7 @@ model_config:
   output_dim: 2       ## no of output dimension
   n_layers: 3        ## no of recurrent layers
   bidirectional: True  ## use bidirectional RNN
-  dopout: 0.4          ## dropout rate
+  dropout: 0.4          ## dropout rate
 
 
 ## Data configuration
@@ -19,7 +19,7 @@ data_config:
 ## Training Configuration
 
 batch_size: 512  ## batch size for training
-lr = 0.0005     ## learning rate
+lr : 0.0005     ## learning rate
 num_epochs: 7    ## no of epochs
 initialize_weights: True  ## flag for the weight initialization
 
